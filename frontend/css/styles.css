@@ -1,0 +1,32 @@
+/* Custom styles beyond Tailwind */
+
+.reply-card {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.reply-card:hover {
+    transform: translateY(-2px);
+}
+
+.reply-card.copied {
+    border-color: #8B5CF6;
+    background-color: #F5F3FF;
+}
+
+/* Loading animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
